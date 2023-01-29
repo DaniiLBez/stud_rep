@@ -1,0 +1,6 @@
+UP t
+LEFT f
+DOWN g
+RIGHT h
+QUIT q
+
