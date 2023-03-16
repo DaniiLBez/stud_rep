@@ -28,7 +28,7 @@ bool Balancer::isPacketAllow(){
     int count = timestamps.size();
     if(count < limit) return true;
     
-    if(timestamps[count].getEllapsedTime() < 1000){
+    if(timestamps.back().getEllapsedTime() < 1000){
         timestamps.pop_back();
         return false;
     }
